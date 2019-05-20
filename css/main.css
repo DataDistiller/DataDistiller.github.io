@@ -20,6 +20,12 @@ footer { border-top: 1px solid #d5d5d5; font-size: .8em; }
 ul.posts { margin: 20px auto 40px; font-size: 1.5em; }
 ul.posts li { list-style: none; }
 
+
+/* Quotes */
+ul.quotes { margin: 20px auto 40px; font-size: 1.5em; }
+ul.quotes li { list-style: none; }
+
+
 /* CV */
 .cv { margin: 0px 0px 60px; }
 .cv h1 { font-size: 3em; }
@@ -35,4 +41,3 @@ ul.posts li { list-style: none; }
 .resources description { font-size: 2em; }
 .resources address { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; }
 .cv address { font-size: 1.2em; }
-
