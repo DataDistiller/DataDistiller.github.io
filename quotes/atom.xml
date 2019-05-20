@@ -4,7 +4,7 @@ layout: feed
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Distiller's Quotes</title>
+ <title>Quotes</title>
  <link href="http://DataDistiller.github.io/quotes/atom.xml" rel="self"/>
  <link href="http://DataDistiller.github.io/quotes"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
@@ -25,3 +25,4 @@ layout: feed
  {% endfor %}
  
 </feed>
+
