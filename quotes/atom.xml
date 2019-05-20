@@ -4,9 +4,9 @@ layout: feed
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Quotes/title>
- <link href="http://DataDistiller.github.io/quotes/atom.xml" rel="self"/>
- <link href="http://DataDistiller.github.io/quotes"/>
+ <title>Distiller's Quotes</title>
+ <link href="http://DataDistiller.github.io/blog/atom.xml" rel="self"/>
+ <link href="http://DataDistiller.github.io/blog"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>http://DataDistiller.github.io/quotes</id>
  <author>
@@ -16,9 +16,9 @@ layout: feed
 
  {% for quote in site.quotes %}
  <entry>
- 
-   <link href="http://DataDistiller.github.io{{ post.url }}"/>
-   
+   <title>{{ quote.title }}</title>
+   <link href="http://DataDistiller.github.io{{ quote.url }}"/>
+   <updated>{{ quote.date | date_to_xmlschema }}</updated>
    <id>http://DataDistiller.github.io/{{ quote.id }}</id>
    <content type="html">{{ quote.content | xml_escape }}</content>
  </entry>
