@@ -1,0 +1,27 @@
+---
+layout: feed
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Quotes/title>
+ <link href="http://DataDistiller.github.io/quotes/atom.xml" rel="self"/>
+ <link href="http://DataDistiller.github.io/quotes"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://DataDistiller.github.io/quotes</id>
+ <author>
+   <name>Data Distiller</name>
+   <email>ashvin.chougule@gmail.com</email>
+ </author>
+
+ {% for quote in site.quotes %}
+ <entry>
+ 
+   <link href="http://DataDistiller.github.io{{ post.url }}"/>
+   
+   <id>http://DataDistiller.github.io/{{ quote.id }}</id>
+   <content type="html">{{ quote.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+ 
+</feed>
