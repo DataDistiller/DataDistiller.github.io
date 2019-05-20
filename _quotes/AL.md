@@ -1,1 +1,7 @@
+---
+layout: quote
+title: "Lincoln"
+date: 2019-05-19
+---
+
 You can full full all people some time, some people all the time, but not all  people all the time.
