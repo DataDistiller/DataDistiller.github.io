@@ -24,4 +24,15 @@ layout: feed
  </entry>
  {% endfor %}
  
+ 
+  {% for saying in site.sayings %}
+ <entry>
+   <title>{{ saying.title }}</title>
+   <link href="http://DataDistiller.github.io{{ saying.url }}"/>
+   <updated>{{ saying.date | date_to_xmlschema }}</updated>
+   <id>http://DataDistiller.github.io/{{ saying.id }}</id>
+   <content type="html">{{ saying.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+ 
 </feed>
