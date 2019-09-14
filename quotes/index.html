@@ -3,10 +3,10 @@ layout: default
 title: Distiller's Quotes
 ---
 <h1>{{ page.title }}</h1>
-<ul class="posts">
+<ul class="saying">
 
-  {% for post in site.posts %}
-    <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+  {% for saying in site.sayings %}
+    <li><a href="{{ saying.url }}" title="{{ saying.title }}">{{ saying.title }}</a></li>
   {% endfor %}
     
 </ul>
