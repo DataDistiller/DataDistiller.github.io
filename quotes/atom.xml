@@ -15,13 +15,13 @@ layout: feed
    <name>Data Distiller</name>
    <email>ashvin.chougule@gmail.com</email>
  </author>
- {% for post in site.posts %}
+ {% for saying in site.sayings %}
  <entry>
-   <title>{{ post.title }}</title>
-   <link href="http://DataDistiller.github.io{{ post.url }}"/>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://DataDistiller.github.io/{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
+   <title>{{ saying.title }}</title>
+   <link href="http://DataDistiller.github.io{{ saying.url }}"/>
+   <updated>{{ saying.date | date_to_xmlschema }}</updated>
+   <id>http://DataDistiller.github.io/{{ saying.id }}</id>
+   <content type="html">{{ saying.content | xml_escape }}</content>
  </entry>
  {% endfor %}
  
