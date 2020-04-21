@@ -7,10 +7,10 @@ layout: feed
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Distiller's Blog</title>
- <link href="http://DataDistiller.github.io/blog/atom.xml" rel="self"/>
- <link href="http://DataDistiller.github.io/blog"/>
+ <link href="http://DataDistiller.github.io/quotes/atom.xml" rel="self"/>
+ <link href="http://DataDistiller.github.io/quotes"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://DataDistiller.github.io/blog</id>
+ <id>http://DataDistiller.github.io/quotes</id>
  <author>
    <name>Data Distiller</name>
    <email>ashvin.chougule@gmail.com</email>
