@@ -2,29 +2,29 @@
 layout: feed
 ---
 
-
+<!--
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Distiller's Quotes</title>
- <link href="http://DataDistiller.github.io/quotes/atom.xml" rel="self"/>
- <link href="http://DataDistiller.github.io/quotes"/>
+ <title>Distiller's Blog</title>
+ <link href="http://DataDistiller.github.io/blog/atom.xml" rel="self"/>
+ <link href="http://DataDistiller.github.io/blog"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://DataDistiller.github.io/quotes</id>
+ <id>http://DataDistiller.github.io/blog</id>
  <author>
    <name>Data Distiller</name>
    <email>ashvin.chougule@gmail.com</email>
  </author>
- {% for saying in site.sayings %}
+ {% for post in site.posts %}
  <entry>
-   <title>{{ saying.title }}</title>
-   <link href="http://DataDistiller.github.io{{ saying.url }}"/>
-   <updated>{{ saying.date | date_to_xmlschema }}</updated>
-   <id>http://DataDistiller.github.io/{{ saying.id }}</id>
-   <content type="html">{{ saying.content | xml_escape }}</content>
+   <title>{{ post.title }}</title>
+   <link href="http://DataDistiller.github.io{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://DataDistiller.github.io/{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
  
  
 </feed>
-
+--!>
